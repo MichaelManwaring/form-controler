@@ -1,0 +1,9 @@
+<h2>Edit</h2>
+
+<%= form_for @user ,html: {method: :put} do |f| %>
+	<%=f.label :username %>
+	<%=f.text_field :username %>
+	<%=f.label :favnum %>
+	<%=f.text_field :favnum %>
+	<%=f.submit :update %>
+<% end %>

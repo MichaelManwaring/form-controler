@@ -1,0 +1,9 @@
+<h2>Sign up</h2>
+
+<%= form_for @user do |f| %>
+	<%=f.label :username %>
+	<%=f.text_field :username %>
+	<%=f.label :favnum %>
+	<%=f.text_field :favnum %>
+	<%=f.submit :create %>
+<% end %>

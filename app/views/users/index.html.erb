@@ -1,0 +1,10 @@
+<%= link_to "link text...", signup_path() %>
+<br>
+<% @users.each do |u| %>
+	<%= link_to "Edit", edit_user_path(u.id) %>
+	<% for i in 1..u.favnum do %>
+		<%= u.username %> 
+	<% end %>
+	<br>
+<% end %>
+
